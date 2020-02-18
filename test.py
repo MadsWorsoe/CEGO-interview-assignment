@@ -21,8 +21,7 @@ def ExecuteSQLDump(sqldumpname):
 
 sqldumpLocation = "sqldump.sql"
 UsersTable = config.mariadb.__getitem__("users_table")
-SelectQuery = "SELECT id, firstName, lastName, email FROM " + UsersTable
-file = "Test.txt"
-
+SelectQuery = config.test.__getitem__("query") + UsersTable
+file = config.test.__getitem__("filename")
 
 TestAssignment(sqldumpLocation, SelectQuery, file)

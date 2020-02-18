@@ -1,15 +1,20 @@
-# Job interview assignment
-We kindly ask you to solve the task below. By solving and submitting this assignment you provide us with insights in how you solve real-world problems. What we will be looking at are topics such as: choice of technology, structuring of code, use of VCS, selection of 3rd party libraries, documentation etc.
+#CEGO Job Interview Assignment
 
-## The task
-Develop a solution that, given a select query, can read data from a database, write it to a local file and then delete the data from the database. The solution should verify that data is written to the file, and that data integrity is maintained, before deleting it from the database.
+Assignment can be found in Assignment.md
 
-- Use Bash, PHP, JavaScript or Go as the language
-- Use MySQL, MariaDB, CockroachDB or SQLite as the database
+Given a query, the solution will select that data from the database, write it to a given filename and delete the entry from the database.
 
-Please use the data set provided in the SQL dump in this repo. Please also consider that your solution should be able to handle much larger data sets.
+Data integrity is secured by searching the file for the entry before deletion.
 
-## Expectations
-Make a copy of this repo. Solve the task below. Push your code to a public repo, and send us the link as a reply to our email.
+The solution can be tested by running test.py.
 
-Your solution should include a short readme describing your solution, how to use/test it and any final considerations such as known errors, next steps, security concerns etc. Don’t worry we are not expecting this thing to be perfect.
+The parameters (such as database connection, query and filename) for the solution can be changed in config.py
+
+Security Concerns:
+	Writing user and password in a file
+	Adding user & password to VCS!
+
+Next Steps:
+Better Exception handling (for functions).
+Better checking of data integrity (more reliable method).
+Improve handling of file creationg (possibly make choice for append, in case new data should be appended to old).

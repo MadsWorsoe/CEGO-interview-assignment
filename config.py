@@ -6,3 +6,7 @@ mariadb = dict(
     db = 'cego',
     users_table = 'users'
 )
+test = dict(
+    query = 'SELECT id, firstName, lastName, email FROM ',
+    filename = 'Test.txt'
+)
