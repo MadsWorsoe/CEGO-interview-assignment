@@ -7,6 +7,6 @@ mariadb = dict(
     users_table = 'users'
 )
 test = dict(
-    query = 'SELECT id, firstName, lastName, email FROM ',
+    query = 'SELECT id, firstName, lastName, email FROM users',
     filename = 'Test.txt'
 )
