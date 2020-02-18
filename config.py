@@ -1,7 +1,8 @@
 mariadb = dict(
-    mariadb_ip_address = 'localhost',
-    mariadb_port = '3306',
-    mariadb_user = 'root',
-    mariadb_password = 'password',
-    mariadb_db = 'cego'
+    ip_address = 'localhost',
+    port = 3307,
+    user = 'root',
+    password = 'password',
+    db = 'cego',
+    users_table = 'users'
 )
